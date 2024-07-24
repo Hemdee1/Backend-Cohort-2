@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <%- include('../partial/head.ejs') %>
+  </head>
+  <body>
+    <%- include('../partial/nav.ejs') %>
+    <div class="blog-details">
+      <h1 class="title">Blog Details</h1>
+
+      <div class="blog-cont">
+        <h1><%= blog.title %></h1>
+        <span><%= blog.snippet %></span>
+        <p><%= blog.body %></p>
+      </div>
+      <div class="delete-cont">
+        <button class="btn" data-id="<%=blog._id %>">Delete Blog</button>
+      </div>
+    </div>
+
+    <%- include('../partial/footer.ejs') %>
+
+    <script>
+      const deleteBtn = document.querySelector('.delete-cont button');
+
+      deleteBtn.addEventListener('click', () => {
+        const id = deleteBtn.dataset.id;
+
+        const res = fetch(`/blogs/${id}`, {
+          method: 'delete'
+        }).then((data) => {
+            window.location.href = '/blogs'
+        }).catch((err) => {
+          console.log(err);
+        })
+        
+      })
+    </script>
+  </body>
+</html>

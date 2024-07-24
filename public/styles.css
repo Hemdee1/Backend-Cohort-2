@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* nav styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid gray;
+  margin-bottom: 2rem;
+}
+
+nav h1 {
+  font-size: 2rem;
+  color: #333;
+  text-transform: uppercase;
+}
+
+nav a {
+  font-size: 1rem;
+  color: gray;
+  margin-right: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* blogs styles */
+
+.body {
+  min-height: 90vh;
+}
+
+.blogs {
+  width: 100%;
+  background: rgb(201, 199, 199);
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  transition: 0.5s;
+}
+
+.blogs:hover {
+  background: #999;
+  color: white;
+}
+
+a.blog-link {
+  color: #333;
+  text-decoration: none;
+}
+
+.blogs h1 {
+  font-size: 1.6rem;
+  font-family: monospace;
+}
+
+.blogs p {
+  font-size: 1.3rem;
+  color: gray;
+  margin-top: 0.5rem;
+}
+
+/* about styles */
+.about {
+  min-height: 75vh;
+}
+h1.title {
+  text-align: center;
+  font-weight: 700;
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.about h3 {
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+/* create blog styles */
+.create {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control {
+  width: 500px;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
+}
+
+.form-control input,
+textarea {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid gray;
+  border-radius: 5px;
+  font-family: inherit;
+  outline: none;
+  resize: none;
+}
+
+.form-control h5 {
+  font-size: 1rem;
+  color: #333;
+}
+
+.btn {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  background: crimson;
+  cursor: pointer;
+}
+
+/* blog details */
+
+.blog-details {
+  min-height: 75vh;
+  width: 100%;
+}
+
+.blog-cont {
+  width: 100%;
+  word-wrap: break-word;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.blog-cont h1 {
+  font-size: 1.6rem;
+  color: #333;
+  font-family: monospace;
+  margin-bottom: 1rem;
+}
+
+.blog-cont span {
+  font-size: 1.1rem;
+  color: gray;
+}
+
+.blog-cont p {
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+
+.delete-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 10;
+  left: 0;
+  right: 0;
+}
+
+footer h3 {
+  font-size: 1.2rem;
+  color: gray;
+  text-align: center;
+  margin: 1rem 0;
+  letter-spacing: 3px;
+}
